@@ -17,7 +17,7 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   for (const mem of participants) {
     teks += ` 💗 @${mem.id.split('@')[0]}\n`;
   }
-  teks += `*𝐒𝐊𝐀𝐑𝐂𝐈𝐓𝐀 𝐁𝐎𝐓*`;
+  teks += `*𝐀𝐋𝐄 𝐁𝐎𝐓*`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
 };
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
